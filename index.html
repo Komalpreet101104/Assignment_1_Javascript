@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- title of the page -->
+  <title>See 'N' Say Storymaker</title>
+
+  <!-- linked css file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- heading of the content of the game -->
+    <h1>See 'N' Say Storymaker</h1>
+
+    <!-- container for the choices of the options of the random words -->
+    <div id="choices">
+      <div class="choice-container">
+        <!-- button for the choice 1 -->
+        <button class="choice" onclick="cycleWords(0)">1</button>
+        <div class="options" id="options1"></div>
+      </div>
+      <div class="choice-container">
+                <!-- button for the choice 2-->
+        <button class="choice" onclick="cycleWords(1)">2</button>
+        <div class="options" id="options2"></div>
+      </div>
+      <div class="choice-container">
+                <!-- button for the choice 3 -->
+        <button class="choice" onclick="cycleWords(2)">3</button>
+        <div class="options" id="options3"></div>
+      </div>
+      <div class="choice-container">
+                <!-- button for the choice 4-->
+        <button class="choice" onclick="cycleWords(3)">4</button>
+        <div class="options" id="options4"></div>
+      </div>
+      <div class="choice-container">
+                <!-- button for the choice 5 -->
+        <button class="choice" onclick="cycleWords(4)">5</button>
+        <div class="options" id="options5"></div>
+      </div>
+    </div>
+        <!-- Button to view the story -->
+    <button id="viewStoryBtn" onclick="viewStory()">View Story</button>
+
+        <!-- Button to generate a random story -->
+    <button id="randomStoryBtn" onclick="generateRandomStory()">Random Story</button>
+
+        <!-- Button to reset thestory -->
+    <button id="resetBtn" onclick="resetStory()">Reset</button>
+
+        <!-- Container to display story -->
+    <div id="storyOutput"></div>
+
+        <!-- Container for the audio description of the story -->
+    <audio id="storyAudio" controls></audio>
+  </div>
+  
+<!-- linking the script file  -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Setting font family and background color for the entire body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(253, 253, 133);
+}
+
+/* styles for the position of the content to center it  */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+/* styling for the main heading of the webpage */
+h1 {
+  color: #000000;
+  font-weight: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* styling for the choice containers */
+.choice-container {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the right margin */
+  margin-bottom: 20px; /* Add margin between lines */
+}
+
+/* styles for the choice options */
+.choice {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #cad9f7;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* styling for the options containers */
+.options {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* styles for positioning the options buttons */
+.options button {
+  margin: 5px;
+  padding: 5px 18px;
+  background-color: #fdfbfb;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* styles for the hovering of the options button. */
+.options button:hover {
+  background-color: #e9e8e7;
+}
+
+
+/* Styling for the three buttons below the choices */
+#viewStoryBtn,
+#randomStoryBtn,
+#resetBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #064b70;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* styles for hovering of the buttons */
+#viewStoryBtn:hover,
+#randomStoryBtn:hover,
+#resetBtn:hover {
+  background-color: #032e45;
+}
+
+/* styling for  output button of the story */
+#storyOutput {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1.5px solid #000000; /* Add border */
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* different background colors for the choice boxes to relate with the actual game */
+.choice-container:nth-child(1) .choice {
+  background-color: #efb6fc; /* Light blue */
+}
+
+.choice-container:nth-child(2) .choice {
+  background-color: #9eebfe; /* Light orange */
+}
+
+.choice-container:nth-child(3) .choice {
+  background-color: #8ffa95; /* Light yellow */
+}
+
+.choice-container:nth-child(4) .choice {
+  background-color: #fab163; /* Light green */
+}
+
+.choice-container:nth-child(5) .choice {
+  background-color: #fea9d9; /* Light pink */
+}
+
